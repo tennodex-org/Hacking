@@ -1,0 +1,63 @@
+.grineer-container {
+    overflow: hidden;
+
+    .grineer.grid {
+        position: absolute;
+        left: 50%;
+        margin-top: 75px;
+        margin-left: -250px;
+        width: 500px;
+        height: 500px;
+        background-size: contain;
+        background-image: url("/assets/img/grineer/grid.png");
+
+        &.spinner {
+            display: inline-block;
+            margin-top: 0px;
+            margin-left: -325px;
+            width: 650px;
+            height: 650px;
+            background-size: contain;
+            background-image: url("/assets/img/grineer/pointer.png");
+            -webkit-animation: rotatingSpinner 5s linear infinite;
+            -moz-animation: rotatingSpinner 5s linear infinite;
+            -ms-animation: rotatingSpinner 5s linear infinite;
+            -o-animation: rotatingSpinner 5s linear infinite;
+            animation: rotatingSpinner 5s linear infinite;
+        }
+    }
+}
+
+@-webkit-keyframes rotatingSpinner {
+
+    /* Safari and Chrome */
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotatingSpinner {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
